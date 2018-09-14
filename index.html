@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Donut Adventure Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+  <div class="screen-panel">
+    <div class="screen" id="screen1">
+      <div class="welcome-container">
+        <div class="line-decor"></div>
+        <p class="black-text">Welcome to</p>
+        <div class="line-decor"></div>
+      </div>
+      <div id="title-container">
+        <span>THE DONUT ADVENTURE</span>
+      </div>
+      <div class="arrow arrow-left" id="al-screen1"></div>
+      <div class="arrow arrow-right" id="ar-screen1"></div>
+    </div>
+  </div>
+  <div class="screen-panel">
+    <div class="screen" id="screen2">
+      <div class="heading-container">
+        <p class="black-text">The Adventures of Dougie the Donut on the Streets of NYC</p>
+      </div>
+      <div class="subtext-container">
+        <p>Dougie is a funky fresh donut who has decided to walk his way from the Flat Iron District to Times Square where he
+          wants to show off his sweet moves.</p>
+        <div id="d-and-r-img">
+          <div id="dougie-img"></div>
+          <div id="ninja-rat-img"></div>
+        </div>
+        <p>Along the way, Dougie is approached by his arch-nemesis Pizza Rat Ninja.</p>
+        <p>Sometimes they fight, sometimes they just talk smack at each other. Anyway that it goes, let's try to get Dougie
+          safely to Times Square!</p>
+      </div>
+      <div class="arrow arrow-left" id="al-screen2"></div>
+      <div class="arrow arrow-right" id="ar-screen2"></div>
+    </div>
+  </div>
+  <div class="screen-panel">
+    <div class="screen" id="screen3">
+      <div id="battle-area">
+        <div id="battle-ground">
+          <div id="enemy-area">
+            <div id="enemy-moves">
+              <div class="moves-title heading-container">
+                <p id="enemy-name">PIZZA RAT</p>
+              </div>
+              <div class="title-moves">
+                <span>MOVES</span>
+              </div>
+              <div class="list-of-moves">
+                <p class="move" id="enemy-move1"></p>
+                <p class="move" id="enemy-move2"></p>
+              </div>
+            </div>
+            <img src="./img/ninja-rat.gif" alt="">
+          </div>
+          <div id="hero-area">
+            <img src="./img/dougie.gif" alt="">
+            <div id="hero-moves">
+              <div class="moves-title heading-container">
+                <p id="hero-name">DOUGIE</p>
+              </div>
+              <div class="title-moves">
+                <span>MOVES</span>
+              </div>
+              <div class="list-of-moves">
+                <p class="move" id="hero-move1"></p>
+                <p class="move" id="hero-move2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="battle-log">
+          <div id="log">
+            <p id="log-line-1">Dougie is walking down Flat Iron. . .
+            </p>
+            <p id="log-line-2">But, oh no! He runs into Pizza rat!</p>
+          </div>
+          <div id="battle-log-menu">
+            <div class="button" id="talk-smack">
+              <span>Talk Smack</span>
+            </div>
+            <div class="button" id="fight">
+              <span>Fight</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow arrow-left" id="al-screen3"></div>
+      <div class="arrow arrow-right" id="ar-screen3"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
