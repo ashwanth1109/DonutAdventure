@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Kosugi+Maru|Lato");
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.screen-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  background-color: #fff;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  position: relative;
+  transition: visibility 1s, opacity 1s linear;
+}
+
+#screen1 {
+  height: 40vh;
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
+#screen2 {
+  height: 80vh;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+}
+
+#screen3 {
+  height: 80vh;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  height: 100px;
+  justify-content: space-evenly;
+  background-color: #e8b80b;
+  margin-bottom: 5vh;
+}
+.line-decor {
+  height: 10px;
+  width: 150px;
+  background-color: #563191;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  background-color: #e8b80b;
+  margin-bottom: 5vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+
+.black-text {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #2e2e2e;
+}
+
+#title-container span {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 4rem;
+  color: #563191;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #2e2e2e transparent transparent;
+  left: 0;
+  margin-left: 2%;
+}
+.arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #2e2e2e;
+  right: 0;
+  margin-right: 2%;
+}
+
+.subtext-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.subtext-container p {
+  font-family: "Lato", sans-serif;
+  color: #2e2e2e;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+#d-and-r-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#dougie-img {
+  width: 20vw;
+  height: 20vh;
+  background-image: url(./img/dougie.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#ninja-rat-img {
+  width: 20vw;
+  height: 20vh;
+  background-image: url(./img/ninja-rat.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#battle-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#battle-ground {
+  width: 80%;
+  height: 70%;
+}
+#battle-log {
+  width: 100%;
+  height: 30%;
+  background-color: #563191;
+  display: flex;
+  flex-direction: row;
+}
+#log {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#battle-log-menu {
+  width: 30%;
+  background-color: #e8b80b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button {
+  width: 80%;
+  height: 20%;
+  background-color: #fff;
+  border: 1px solid #563191;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #563191;
+  transition: background 0.5s, color 0.4s ease-in-out;
+}
+.button span {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+.button:hover {
+  background-color: #563191;
+  color: #e8b80b;
+}
+#log p {
+  font-size: 1.2vw;
+  color: #fff;
+  line-height: 0.3rem;
+  font-family: "Lato", sans-serif;
+}
+#hero-area {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#enemy-area {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#hero-area img {
+  height: 100%;
+}
+#enemy-area img {
+  height: 100%;
+}
+#hero-moves {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#enemy-moves {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.moves-title {
+  width: 100%;
+  font-size: 1vw;
+  font-family: "Lato", sans-serif;
+}
+.moves-title p {
+  text-align: center;
+  width: 100%;
+  line-height: 0rem;
+}
+.list-of-moves {
+  width: 100%;
+  display: flex;
+  height: 5vh;
+  justify-content: space-evenly;
+}
+.list-of-moves p {
+  font-family: "Lato", sans-serif;
+  color: #563191;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
